@@ -1,0 +1,14 @@
+<div class="container">
+  <app-header></app-header>
+
+  <div class="imageContainer">
+    <img class="image" *ngFor="let image of images" src="{{image}}" alt="image" (click)="openGalery($event)">
+  </div>
+
+</div>
+
+<div class="galery" *ngIf="galery">
+  <div class="left side flex"><img src="../../assets/left.png" alt="left" class="arrow"></div>
+  <div class="currentImage flex"><img class="bigPicture" src="{{currentImage}}" alt="bigPicture"></div>
+  <div class="right side flex"><img src="../../assets/right.png" alt="right" class="arrow" (click)="toRight()"></div>
+</div>

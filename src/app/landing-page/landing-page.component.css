@@ -1,4 +1,145 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  min-height: 300px;
 }
+
+hr {
+  margin: 8vh 3vw 0 3vw;
+}
+
+.slideShow {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7vh;
+}
+
+.slides {
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
+  background-image: url("../../assets/slide1.jpg");
+  background-size: 100%;
+  background-position: center;
+  animation: slide 50s infinite;
+}
+
+@keyframes slide {
+  25% {
+    background-image: url("../../assets/slide1.jpg");
+  }
+  30% {
+    background-image: url("../../assets/slide2.jpg");
+  }
+  65% {
+    background-image: url("../../assets/slide2.jpg");
+  }
+  70% {
+    background-image: url("../../assets/slide3.jpg");
+  }
+  85% {
+    background-image: url("../../assets/slide3.jpg");
+  }
+  100% {
+    background-image: url("../../assets/slide1.jpg");
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100px;
+  margin: 9vh 0;
+  padding: 1vw;
+}
+
+.leftSide {
+  margin-left: 10vw;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.leftSide h3 {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.boss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.josi {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19vw;
+  height: 30vw;
+}
+
+.introduction {
+  width: 50vw;
+  min-height: 100px;
+  margin-right: 10vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1vw;
+}
+
+.margo {
+  margin-top: 3vw;
+}
+
+ul {
+  margin-left: 4vw;
+  margin-top: 1vh;
+}
+
+.kapcsolat {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.kapcsolat p {
+  margin: 1vh 0 1vh 1vw;
+}
+
+.icon {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 1vh 0;
+}
+
+.kapcsIcon {
+  width: 30px;
+  height: 30px;
+  background-size: 100% auto;
+}
+
+.facebook {
+  background-image: url('../../assets/facebook.png');
+}
+
+.gmail {
+  background-image: url('../../assets/gmail.png');
+}
+
+

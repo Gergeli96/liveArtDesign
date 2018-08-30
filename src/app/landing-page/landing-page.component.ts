@@ -12,4 +12,8 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  profilePicture = {
+    'background-image': 'url("https://chiamataxilatina.it/wp-content/uploads/2016/09/man-silhouette-clip-art-5219.jpg")',
+  } 
+
 }
